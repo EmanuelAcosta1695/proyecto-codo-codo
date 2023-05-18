@@ -1,0 +1,808 @@
+@media only screen and (max-width: 1920px) {
+  html,body {
+    display: flex; /*Esta propiedad especifica que el elemento es un contenedor flexible, lo que permite que sus elementos secundarios sean organizados y alineados fácilmente.*/
+    height:100%;
+    flex-direction: column; /*Establece la dirección del eje principal en vertical, lo que significa que los elementos se apilarán verticalmente.*/
+    margin: 0;
+    max-height:100%;
+    background-size:100% 100%; /*Establece el tamaño de la imagen de fondo al 100% de la anchura y altura del elemento.*/
+  }
+
+  /* .contenedor_header{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background-color: #d9d9d9;
+    text-align: center;
+    font-size: 5vh;
+    font-family:'Handlee', serif;
+    align-items: center;
+  }
+
+  #imagen_header {
+    padding: 0px;
+    margin-left: 10vh;
+    width: 70%;
+  } */
+
+
+  .contenedor_header{
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    background-color: #d9d9d9;
+    text-align: center;
+    font-size: 5vh;
+    font-family: 'Handlee', serif;
+    align-items: center;
+    padding: 10px;
+  }
+
+  #imagen_header {
+    padding: 0px;
+    margin-left: 10vh;
+    width: 70%;
+  }
+
+
+  h1 {
+    font-size: 5vh;
+    font-family: 'Handlee', serif;
+  }
+
+  .categorias_header {
+    justify-self: end;
+    font-size: 18px;
+    align-self: flex-end;
+    margin-top: auto;
+    width: 600px;
+    margin-right: 30px;
+  }
+
+  .categorias_header a {
+      margin-left: 10px;
+      color: #333;
+      text-decoration: underline;
+  }
+
+
+  /*----------------------------------------------*/
+
+  /* Estilos para el footer */
+  .footer {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+
+    /*Mostrar siempre footer abajo*/
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+  }
+  
+  /* Estilos para los iconos */
+  .footer .social-icons a {
+    color: #333;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+
+  /*no se muestra scrollbar*/
+  ::-webkit-scrollbar {display: none;}
+
+
+  .snap-container {
+    height: 100vh; /*Establece la altura del elemento en un 100% del alto visible del viewport (ventana del navegador)*/
+    overflow: scroll; /* Habilita la barra de desplazamiento en caso de que el contenido del elemento sea más grande que su altura establecida.*/
+    scroll-snap-type: y mandatory; /*Define que el desplazamiento de desplazamiento vertical (eje Y) se alinee con los puntos de anclaje (snap points) 
+                                   definidos en los hijos de este elemento. La palabra clave mandatory indica que cada desplazamiento debe detenerse en un snap point.*/
+    scroll-behavior: initial; /*Establece el comportamiento de desplazamiento inicial del elemento como el comportamiento predeterminado del navegador.*/
+  }
+
+  .scroll-page {
+    scroll-snap-align: start; /*Define que el inicio de la sección se ajuste al snap point más cercano cuando se realiza un desplazamiento.*/
+    min-height: 100vh; /*Establece la altura mínima de la sección en un 100% del alto visible del viewport (ventana del navegador).*/
+    scroll-behavior: end; /* Establece el comportamiento de desplazamiento del elemento como finalizar en la posición del snap point más cercano.*/
+  } 
+
+  .scroll-page-header {
+    scroll-snap-align: start; 
+    min-height: 50vh; 
+    scroll-behavior: end;
+  }
+
+
+
+  /*Todas las imagenes*/
+  .img-categorias {
+    height: 930px;
+    width: 1200px;
+  }
+
+  
+  .bebidas .postres .almuerzo-cena .desayuno-merienda {
+    display: inline-block; /*se comportan como elementos en línea*/
+    background-color: #fff;
+  }
+    
+  h2 {
+      font-size: 55px;
+      margin: 50px 0 20px 0;
+      font-family:'Handlee', serif;
+    }
+
+  .logo {
+    width: 200px; 
+    height: 25px; 
+    margin-top: 15px; 
+    margin-bottom: 15px;
+  }
+  
+    
+  p {
+      font-size: 35px;
+      margin: 40px 0 0 0;
+      font-family:'Handlee', serif;
+    }
+
+  .link {
+    color: black;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: inherit;
+  }
+  
+
+  /*-----------------------------------------------------*/
+
+
+  /*div contenedor de la imagen*/
+  .imageBebidas {
+    float: right;
+    height: 100%;
+    margin-top: 1px;
+    margin-bottom: 10px;
+  }
+  
+  
+  /* top - right - low - left  */
+  
+  .contentBebidas {
+    flex: left;
+    display: flex;
+    background-color: #fff;
+    padding: 50px 80px 0 60px;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /*div contenedor de la imagen*/
+  .imagePostres {
+    float: left;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .contentPostres {
+    flex: right;
+    background-color: #ffffff;
+    padding: 50px 60px 0 60px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .imageAlmuerzo-cena {
+    float: right;
+    height: 100%;
+    margin-top: 1px;
+    margin-bottom: 10px;
+  }
+
+  .contentAlmuerzo-cena {
+    flex: left;
+    display: flex;
+    background-color: #fff;
+    padding: 50px 80px 0 60px;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .imageDesayuno-merienda {
+    float: left;
+    height: 100%;
+  }
+
+  .contentDesayuno-merienda {
+    flex: right;
+    background-color: #ffffff;
+    padding: 50px 60px 0 60px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+
+
+
+
+/*-------- Diseño Responsivo -------------*/
+
+/*max width = para q mantenga un ancho los elementos por mas q la pantalla se estire */
+
+@media only screen and (max-width: 1366px) {
+  .bebidas .postres .almuerzo-cena .desayuno-merienda {
+    background-color: #fff;
+    margin: 5px;
+  }
+
+  .contenedor_header{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background-color: #d9d9d9;
+    text-align: center;
+    font-size: 5vh;
+    font-family:'Handlee', serif;
+    align-items: center;
+  }
+
+  #imagen_header {
+    padding: 0px;
+    margin-left: 10vh;
+    width: 70%;
+  }
+
+
+    /*----------------------------------------------*/
+
+  /* Estilos para el footer */
+  .footer {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+
+    /*Mostrar siempre footer abajo*/
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+  }
+  
+  /* Estilos para los iconos */
+  .footer .social-icons a {
+    color: #333;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+
+  /*no se muestra scrollbar*/
+  ::-webkit-scrollbar {display: none;}
+
+  .img-categorias{
+    width: 820px;
+    height: 620px;
+  }
+
+  .snap-container {
+    height: 100vh; 
+    overflow: scroll; 
+    scroll-snap-type: y mandatory;
+    scroll-behavior: initial; 
+  }
+
+  .scroll-page {
+    scroll-snap-align: start; 
+    min-height: 100vh;
+    scroll-behavior: end; 
+  } 
+
+  h2 {
+    font-size: 32px;
+    margin: 50px 0 20px 0;
+    font-family:'Handlee', serif;
+  }
+
+  .logo {
+    width: 200px; 
+    height: 25px; 
+    margin-top: 15px; 
+    margin-bottom: 15px;
+  }
+
+  
+  p {
+      font-size: 18px;
+      margin: 40px 0 0 0;
+      font-family:'Handlee', serif;
+    }
+    
+  .link {
+    color: black;
+  }
+  
+  a:visited {
+    color: inherit;
+  }
+  
+    /*-----------------------------------------------------*/
+
+  /*div contenedor de la imagen*/
+  .imageBebidas {
+    float: right;
+    height: 100%;
+  }
+
+  .contentBebidas {
+    flex: left;
+    background-color: #fff;
+    padding: 50px 80px 0 60px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+    
+  .imagePostres {
+    float: left;
+    height: 100%;
+  }
+  
+  .contentPostres {
+    flex: right;
+    background-color: #ffffff;
+    padding: 50px 80px 0 60px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imageAlmuerzo-cena {
+    float: right;
+    height: 100%;
+  }
+
+  .contentAlmuerzo-cena {
+    flex: left;
+    background-color: #fff;
+    padding: 50px 80px 0 60px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .imageDesayuno-merienda {
+    float: left;
+    height: 100%;
+  }
+
+  .contentDesayuno-merienda {
+    flex: right;
+    background-color: #ffffff;
+    padding: 50px 80px 0 60px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+} 
+
+
+
+
+/*1024*768*/
+@media only screen and (max-width: 1025px) {
+  .bebidas .postres .almuerzo-cena .desayuno-merienda {
+    background-color: #fff;
+    height: 50%;
+  }
+
+  .contenedor_header{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background-color: #d9d9d9;
+    text-align: center;
+    font-size: 5vh;
+    font-family:'Handlee', serif;
+    align-items: center;
+  }
+
+  #imagen_header {
+    padding: 0px;
+    margin-left: 10vh;
+    width: 70%;
+  }
+
+
+    /*----------------------------------------------*/
+
+  /* Estilos para el footer */
+  .footer {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+
+    /*Mostrar siempre footer abajo*/
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+  }
+  
+  /* Estilos para los iconos */
+  .footer .social-icons a {
+    color: #333;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+
+  /*no se muestra scrollbar*/
+  ::-webkit-scrollbar {display: none;}
+
+  .img-categorias {
+    width: 500px;
+    height: 370px;
+  }
+
+  .snap-container {
+    height: 100vh; 
+    overflow: scroll; 
+    scroll-snap-type: y mandatory;
+    scroll-behavior: initial; 
+  }
+
+  .scroll-page {
+    scroll-snap-align: start; 
+    min-height: 50vh;
+    scroll-behavior: end; 
+  } 
+  
+  h2 {
+    font-size: 25px;
+    margin: 20px 0 10px 0;
+    font-family:'Handlee', serif;
+  }
+
+  .logo {
+    width: 150px; 
+    height: 15px; 
+    margin-top: 5px; 
+    margin-bottom: 5px;
+  }
+
+  
+  p {
+    margin: 15px 0 0 0;
+    font-family:'Handlee', serif;
+    font-size: 14px;
+  }
+
+  .link {
+    color: black;
+  }
+  
+  a:visited {
+    color: inherit;
+  }
+  
+
+  /*-----------------------------------------------------*/
+
+
+  /*div contenedor de la imagen*/
+  .imageBebidas {
+    float: right;
+    width: 50%;
+    height: 50%;
+    padding-top: 5px;
+  }
+
+  /* top - right - low - left  */
+
+  .contentBebidas {
+    display: flex;
+    flex: left;
+    
+    width: 50%;
+    height: 370px;
+
+    background-color: #fff;
+    padding: 5px 40px 0 30px;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imagePostres {
+    float: left;
+    width: 50%;
+    height: 50%;
+    padding-top: 5px;
+  }
+  
+  .contentPostres {
+    flex: right;
+    display: flex;
+
+    width: 50%;
+    height: 370px;
+
+    background-color: #fff;
+    padding: 5px 40px 0 30px;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .imageAlmuerzo-cena {
+    float: right;
+    width: 50%;
+    height: 100%;
+    padding-top: 5px;
+  }
+
+  .contentAlmuerzo-cena {
+    display: flex;
+    flex: left;
+    width: 50%;
+    height: 370px;
+    background-color: #fff;
+    padding: 5px 40px 0 30px;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .imageDesayuno-merienda {
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding-top: 5px;
+  }
+
+  .contentDesayuno-merienda {
+    flex: right;
+    display: flex;
+    width: 50%;
+    height: 370px;
+    background-color: #fff;
+    padding: 5px 40px 0 30px;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+
+
+/*768*1024*/
+@media only screen and (max-width: 768px) {
+  .bebidas .postres .almuerzo-cena .desayuno-merienda {
+    background-color: #fff;
+    height: 50%;
+  }
+
+  .contenedor_header{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background-color: #d9d9d9;
+    text-align: center;
+    font-size: 5vh;
+    font-family:'Handlee', serif;
+    align-items: center;
+  }
+
+  #imagen_header {
+    padding: 0px;
+    margin-left: 10vh;
+    width: 70%;
+  }
+
+
+    /*----------------------------------------------*/
+
+  /* Estilos para el footer */
+  .footer {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+
+    /*Mostrar siempre footer abajo*/
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+  }
+  
+  /* Estilos para los iconos */
+  .footer .social-icons a {
+    color: #333;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+
+  /*no se muestra scrollbar*/
+  ::-webkit-scrollbar {display: none;}
+
+  .img-categorias {
+    width: 375px;
+    height: 380px;
+  }
+
+  .snap-container {
+    height: 100vh; 
+    overflow: scroll; 
+    scroll-snap-type: y mandatory;
+    scroll-behavior: initial; 
+  }
+
+  .scroll-page {
+    scroll-snap-align: start; 
+    min-height: 50vh;
+    scroll-behavior: end; 
+  } 
+  
+  h2 {
+    font-size: 25px;
+    margin: 20px 0 10px 0;
+    font-family:'Handlee', serif;
+  }
+
+  .logo {
+    width: 150px; 
+    height: 15px; 
+    margin-top: 5px; 
+    margin-bottom: 5px;
+  }
+
+  
+  p {
+    margin: 15px 0 0 0;
+    font-family:'Handlee', serif;
+    font-size: 14px;
+  }
+
+  .link {
+    color: black;
+  }
+  
+  a:visited {
+    color: inherit;
+  }
+  
+
+  /*-----------------------------------------------------*/
+
+
+  /*div contenedor de la imagen*/
+  .imageBebidas {
+    float: right;
+    width: 50%;
+    height: 50%;
+    padding-top: 55px;
+  }
+
+  /* top - right - low - left  */
+
+  .contentBebidas {
+    display: flex;
+    flex: left;
+    
+    width: 50%;
+    height: 370px;
+
+    background-color: #fff;
+    padding: 110px 40px 0 30px;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imagePostres {
+    float: left;
+    width: 50%;
+    height: 50%;
+    padding-top: 55px;
+    padding-left: 10px;
+  }
+  
+  /* top - right - low - left  */
+  .contentPostres {
+    flex: right;
+    display: flex;
+
+    width: 48%;
+    height: 370px;
+
+    background-color: #fff;
+    padding: 110px 18px 0 30px;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .imageAlmuerzo-cena {
+    float: right;
+    width: 50%;
+    height: 50%;
+    padding-top: 55px;
+  }
+
+  /* top - right - low - left  */
+  .contentAlmuerzo-cena {
+    display: flex;
+    flex: left;
+    
+    width: 50%;
+    height: 370px;
+
+    background-color: #fff;
+    padding: 110px 40px 0 30px;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .imageDesayuno-merienda {
+    float: left;
+    width: 50%;
+    height: 50%;
+    padding-top: 55px;
+    padding-left: 10px;
+  }
+
+  .contentDesayuno-merienda {
+    flex: right;
+    display: flex;
+
+    width: 48%;
+    height: 370px;
+
+    background-color: #fff;
+    padding: 110px 18px 0 30px;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+

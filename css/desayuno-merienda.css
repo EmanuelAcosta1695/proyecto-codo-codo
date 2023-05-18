@@ -1,0 +1,97 @@
+  :root {font-size: 22px}
+
+  .contenedor_header{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background-color: #d9d9d9;
+    text-align: center;
+    font-size: 5vh;
+    font-family:'Handlee', serif;
+    align-items: center;
+  }
+
+
+  .titulo_cards{
+    font-size: 4vh;
+    font-style: italic;
+    background-color: white;
+    text-align:center;
+    font-family: 'Handlee', serif;
+  }
+
+  .descripcion_cards{
+    font-size: 2vh;
+    font-style: normal;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .contenedor_desayuno_merienda{
+    background-color:#f1f1f1;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 20% 20% 20% 20% 20%;   
+    height: 100%; 
+  }
+
+  .item_desayuno_merienda {
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 70% 10% 20%;
+    justify-content: center;
+    align-items: center;    
+  }
+
+  .item_desayuno_merienda_large {
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    grid-column: 3/5;
+    grid-row: 1/3;
+    grid-template-rows: 70% 10% 20%;
+    font-family:'Handlee', serif;
+
+  }
+
+  .item_desayuno_merienda_large2 {
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    grid-column: 1/3;
+    grid-row: 4/6;
+
+  } 
+
+  .imagen_desayuno_merienda {
+    width: 100%;
+    align-items: center;
+  }
+  .imagen_header {
+    padding: 0px;
+    margin-left: 10vh;
+    width: 70%;
+  }
+
+  #hidden{
+    overflow: hidden;
+  }
+
+
+  /* Estilos para el footer */
+  .footer {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Estilos para los iconos */
+  .footer .social-icons a {
+    color: #333;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+  }
