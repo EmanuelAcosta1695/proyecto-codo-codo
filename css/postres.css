@@ -1,8 +1,7 @@
 /* Monitor 1920x1080 */
 @media only screen and (max-width: 1920px) {
     body {
-        /*background-color: rgb(241, 243, 245);*/
-        background-color: #fce9e9;
+        background-color: rgb(253, 253, 253);
         margin: 0px;
         padding: 0px;
     }
@@ -12,18 +11,19 @@
     .contenedor_header{
         display: grid;
         grid-template-columns: 30% 40% 30%;
-        background-color: #d9d9d9;
+        background-color: #deb979;
         text-align: center;
         font-size: 5vh;
         font-family: 'Handlee', serif;
         align-items: center;
-      }
+        padding: 10px;
+    }
     
-      #imagen_header {
+    #imagen_header {
         padding: 0px;
         margin-left: 10vh;
         width: 70%;
-      }
+    }
     
     
       h1 {

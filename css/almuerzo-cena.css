@@ -1,8 +1,7 @@
 /* Monitor 1920x1080 */
 @media only screen and (max-width: 1920px) {
     body {
-        /*background-color: rgb(241, 243, 245);*/
-        background-color: rgb(106, 214, 106);
+        background-color: rgb(253, 253, 253);
         margin: 0px;
     }
 
@@ -13,7 +12,7 @@
     .contenedor_header{
         display: grid;
         grid-template-columns: 30% 40% 30%;
-        background-color: #d9d9d9;
+        background-color: #deb979;
         text-align: center;
         font-size: 5vh;
         font-family: 'Handlee', serif;

@@ -3,7 +3,7 @@
   .contenedor_header{
     display: grid;
     grid-template-columns: 30% 70%;
-    background-color: #d9d9d9;
+    background-color: #deb979;
     text-align: center;
     font-size: 5vh;
     font-family:'Handlee', serif;
