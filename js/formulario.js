@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
           console.log('El formulario se envió correctamente');
 
-          window.location.href = 'http://localhost:5500/Proyecto-Codo-a-Codo/html/index.html';
+          window.location.href = 'http://127.0.0.1:5500/Proyecto-Codo-a-Codo/index.html';
 
         } else {
 

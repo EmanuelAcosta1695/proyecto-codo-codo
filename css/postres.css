@@ -148,6 +148,25 @@
 
 /* Monitor 1366x768 */
 @media only screen and (max-width: 1366px) {
+
+    .contenedor_header{
+        display: grid;
+        grid-template-columns: 30% 40% 30%;
+        background-color: #deb979;
+        text-align: center;
+        font-size: 5vh;
+        font-family: 'Handlee', serif;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    #imagen_header {
+        padding: 0px;
+        margin-left: 10vh;
+        width: 70%;
+    }
+
+
     .card {
         width: calc(35% - 40px);
     }

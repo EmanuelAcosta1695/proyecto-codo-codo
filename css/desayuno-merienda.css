@@ -10,6 +10,12 @@
     align-items: center;
   }
 
+  .imagen_header {
+    padding: 0px;
+    margin-left: 10vh;
+    width: 70%;
+  }
+
 
   .titulo_cards{
     font-size: 4vh;
@@ -69,11 +75,6 @@
   .imagen_desayuno_merienda {
     width: 100%;
     align-items: center;
-  }
-  .imagen_header {
-    padding: 0px;
-    margin-left: 10vh;
-    width: 70%;
   }
 
   #hidden{
