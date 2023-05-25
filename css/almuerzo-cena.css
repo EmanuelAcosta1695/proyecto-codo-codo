@@ -23,7 +23,7 @@
     #imagen_header {
         padding: 0px;
         margin-left: 10vh;
-        width: 70%;
+        width: 45%;
     }
     
     
@@ -60,21 +60,6 @@
         padding-bottom: 30px;
     }
 
-    /* header {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    } */
-
-    /*arriba - izq - abaj - dec*/
-    /* h1 {
-        background-color: #fff;
-        padding: 5px 30px 5px 30px; 
-        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-        border: 2px solid rgb(94, 179, 94);
-        border-radius: 10px;
-        font-size: 40px;    
-    } */
 
     img {
         width: 300px; 

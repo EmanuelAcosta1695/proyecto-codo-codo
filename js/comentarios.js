@@ -6,8 +6,8 @@ var contenido = document.querySelector('#contenido');
                 .then(res => {
                     console.log(res);
                     var resultados = res.results;
-                    var opiniones = ["Este lugar es genial!!! Tiene un ambiente acogedor y relajado, ideal para pasar tiempo con amigos. El personal es amable y atento y la comida abundante y a buen precio.", "Recomiendo este bar a amigos. Decoración moderna y elegante, ambiente sofisticado. Calidad de los platos excepcional con ingredientes de primera. Música perfecta, nunca demasiado alta. Ideal para citas románticas o noches con amigos. ","Muy recomendable!! Fui a festejar mi cumpleaños allí y recibí una muy buena atención. El lugar es amplio y la comida rica y abundante, con buena relación calidad-precio. El mozo que nos atendió se lleva un 10!"];
-                    var i =0;
+                    var opiniones = ["Este lugar es genial!!! Tiene un ambiente acogedor y relajado, ideal para pasar tiempo con amigos. El personal es amable y atento y la comida abundante y a buen precio.", "Recomiendo este bar a amigos. Decoración moderna y elegante, ambiente sofisticado. Calidad de los platos excepcional con ingredientes de primera. Música perfecta, nunca demasiado alta. Ideal para citas románticas o noches con amigos. ", "Muy recomendable!! Fui a festejar mi cumpleaños allí y recibí una muy buena atención. El lugar es amplio y la comida rica y abundante, con buena relación calidad-precio. El mozo que nos atendió se lleva un 10!"];
+                    var i = 0;
 
                     var tabla = document.createElement('table');
                     tabla.classList.add('table');

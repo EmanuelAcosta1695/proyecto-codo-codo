@@ -17,6 +17,7 @@
         border-radius: 10px;
         padding: 20px;
         font-family:'Handlee', serif;
+        margin-bottom: 30px;
     }
 
     .container .form-group {
@@ -34,12 +35,13 @@
     .contenedor_header{
         display: grid;
         grid-template-columns: 30% 40% 32%; /*3ero coloca categorias a la dec*/
-        background-color: #deb979;
+        background-color: #f1f1f1;
         text-align: center;
         font-size: 5vh;
         font-family:'Handlee', serif;
         align-items: center;
-        margin-bottom: 50px;
+        padding-bottom: 10px;
+        padding-top: 10px;
     }
 
     #imagen_header {
@@ -70,7 +72,6 @@
     }
 
 
-
     /* FOOTER */
 
     .footer {
@@ -89,116 +90,3 @@
     }
         
 }
-
-
-
-
-
-/* 
-@media only screen and (max-width: 1366px) {
-    body {
-        background-color: rgb(241, 243, 245);    
-    }
-
-    .container .title {
-        text-align: center;
-    }
-    
-    .container {
-        background-color: white;
-        border-radius: 10px;
-        margin-top: 10px;
-        width: 900px;
-    }
-
-    .container .form-group textarea {
-        width: 600px;
-        height: 80px;
-    }
-    
-} */
-
-
-/*W-H*/
-/*1024*768*/
-/* @media only screen and (max-width: 769px){
-
-    body {
-        background-color: rgb(241, 243, 245);    
-    }
-
-    .container .title {
-        text-align: center;
-        margin-top: 40px;
-    }
-
-    .container {
-        background-color: white;
-        border: 2px solid #f7cac9;
-        border-radius: 10px;
-        margin-top: 120px;
-        height: 950px;
-        width: 900px;
-    }
-
-    .container input {
-        padding: 20px;
-        font-size: 20px;
-    }
-
-    .container label {
-        margin-top: 30px;
-        font-size: 25px;
-    }
-
-    .container .form-group textarea {
-        width: 600px;
-        height: 160px;
-    }
-
-    .container button {
-        margin-top: 20px;
-    }
-} */
-
-
-
-/*768*1024*/
-    /* @media only screen and (max-width: 768px) {
-        body {
-            background-color: rgb(241, 243, 245);    
-        }
-
-        .container .title {
-            text-align: center;
-        }
-        
-        .container {
-            background-color: white;
-            border: 2px solid #f7cac9;
-            border-radius: 10px;
-            margin-top: 20px;
-            height: 710px;
-            width: 900px;
-        }
-
-        .container input {
-            padding: 20px;
-        }
-
-        .container label {
-            margin-top: 20px;
-        }
-
-        .container .form-group textarea {
-            width: 600px;
-            height: 160px;
-        }
-
-        .container button {
-            margin-top: 10px;
-        }
-
-    }
-
-    */

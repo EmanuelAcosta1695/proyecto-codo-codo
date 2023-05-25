@@ -80,6 +80,34 @@
     overflow: hidden;
   }
 
+  /* Barra de navegacion */
+
+  .categorias_header {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 18px;
+    align-self: center;
+    margin-top: auto;
+    width: 100%;
+    margin-right: 30px;
+    background-color: #deb979;
+    font-family: 'Handlee', serif;
+  }
+
+.categorias_header a {
+    margin-right: 10px;
+    color: #333;
+    text-decoration: underline;
+}
+
+  .link {
+    color: black;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: inherit;
+  }
 
   /* Estilos para el footer */
   .footer {

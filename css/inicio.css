@@ -25,14 +25,11 @@
 
   .imagen_header_index{
     padding: 0px;
-    /* margin-left: 10vh; */
     width: 30vw;
-    /* height: 100%; */
   }
 
   .imagen_header_index_title{
     padding: 0px;
-    /* height: 100vh; */
     width: 50vw;
     align-items: center;
   }
@@ -265,14 +262,6 @@
 }
 
 
-
-
-
-
-
-
-
-
 /*-------- Diseño Responsivo -------------*/
 
 /*max width = para q mantenga un ancho los elementos por mas q la pantalla se estire */
@@ -469,11 +458,6 @@
 
 
 
-
-
-
-
-
 /*1024*768*/
 @media only screen and (max-width: 1025px) {
   .bebidas .postres .almuerzo-cena .desayuno-merienda {
@@ -663,14 +647,6 @@
     align-items: center;
   }
 }
-
-
-
-
-
-
-
-
 
 
 
