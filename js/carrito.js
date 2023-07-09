@@ -68,6 +68,8 @@ function miCarrito(event) {
 
             // Actualizar el local storage con el carrito modificado
             localStorage.setItem('carrito', JSON.stringify(carrito));
+
+            window.location.reload()
           })
           .catch(function (error) {
             console.log(error); // Mostrar el error en caso de haberlo
@@ -107,6 +109,8 @@ function miCarrito(event) {
 
           // Actualizar el local storage con el carrito modificado
           localStorage.setItem('carrito', JSON.stringify(carrito));
+
+          window.location.reload()
         })
         .catch(function (error) {
           console.log(error); // Mostrar el error en caso de haberlo
@@ -135,6 +139,8 @@ function miCarrito(event) {
 
         // Guardar el carrito en el local storage
         localStorage.setItem('carrito', JSON.stringify([productoResponse]));
+
+        window.location.reload()
       })
       .catch(function (error) {
         console.log(error); // Mostrar el error en caso de haberlo
