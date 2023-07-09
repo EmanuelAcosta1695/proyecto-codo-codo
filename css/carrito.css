@@ -1,0 +1,126 @@
+/* Monitor 1920x1080 */
+@media only screen and (max-width: 1920px) {
+    body {
+        background-color: rgb(253, 253, 253);
+        margin: 0px;
+        padding: 0px;   
+    }
+
+    /* --------------------------------------------- */
+    /* HEADER */
+    .contenedor_header{
+        display: grid;
+        grid-template-columns: 30% 40% 30%;
+        background-color: #deb979;
+        text-align: center;
+        font-size: 5vh;
+        font-family: 'Handlee', serif;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    #imagen_header {
+        padding: 0px;
+        margin-left: 10vh;
+        width: 45%;
+    }
+    
+    
+    h1 {
+        font-size: 5vh;
+        font-family: 'Handlee', serif;
+    }
+
+    .categorias_header {
+        justify-self: end;
+        font-size: 18px;
+        align-self: flex-end;
+        margin-top: auto;
+        width: 600px;
+        margin-right: 30px;
+    }
+
+    .categorias_header a {
+        margin-left: 10px;
+        color: #333;
+        text-decoration: underline;
+    }
+    
+    
+    /* ------------------------------------ */
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      
+    /* Estilos para la tabla */
+    table {
+        margin: 0 auto;
+        margin-top: 50px;
+        width: 80%;
+        border-collapse: collapse;
+        background-color: #fff;
+    }
+    
+    th {
+        background-color: #deb979;
+        border: 1px solid black;
+        color: #333;
+        padding: 10px;
+    }
+    
+    td {
+        border: 1px solid #deb979;
+        padding: 10px;
+        background-color: white; /* Nuevo estilo para el fondo de las celdas */
+        text-align: center;
+
+    }
+    
+    /* Estilos para las celdas de la columna de categoría */
+    td.categoria {
+        background-color: #deb979;
+        font-weight: bold;
+    }
+
+    .contenedorBtnPresupuesto {
+        margin: 0 auto;
+    }
+
+    #presupuesto {
+        margin-top: 40px;
+        border: 0px;
+        border-radius: 15px ;
+        padding: 15px;
+        background-color: #deb979;
+        color: black;
+        font-weight: bold;
+      }      
+
+
+    /* ------------------------------------ */
+
+
+    /* Estilos para el footer */
+    .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #f9f9f9;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    /* Estilos para los iconos en el footer */
+    .footer .social-icons a {
+        color: #333;
+        font-size: 20px;
+        margin: 0 10px;
+        text-decoration: none;
+    }
+
+
+}

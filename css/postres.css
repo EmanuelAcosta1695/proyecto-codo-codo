@@ -3,7 +3,7 @@
     body {
         background-color: rgb(253, 253, 253);
         margin: 0px;
-        padding: 0px;
+        padding: 0px;   
     }
 
     /* --------------------------------------------- */
@@ -26,29 +26,62 @@
     }
     
     
-      h1 {
+    h1 {
         font-size: 5vh;
         font-family: 'Handlee', serif;
-      }
-    
-      .categorias_header {
+    }
+
+    .categorias_header {
         justify-self: end;
         font-size: 18px;
         align-self: flex-end;
         margin-top: auto;
         width: 600px;
         margin-right: 30px;
-      }
-    
-      .categorias_header a {
-          margin-left: 10px;
-          color: #333;
-          text-decoration: underline;
-      }
+    }
+
+    .categorias_header a {
+        margin-left: 10px;
+        color: #333;
+        text-decoration: underline;
+    }
     
     
     /* ------------------------------------ */
     /**/
+
+    .agregarCarrito {
+        border-radius: 4px; /* Bordes redondeados */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra por debajo */
+        background-color: rgb(252, 248, 248); /* Fondo blanco */
+        color: #333; /* Color del texto */
+        padding: 8px 16px; /* Espacio interno */
+        transition: background-color 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+        margin-top: 8px;
+
+        /* Estilos adicionales para resaltar sutilmente */
+        border: 0.5px solid #ccc; /* Borde delgado */
+        
+    }
+
+    .agregarCarrito:hover {
+        background-color: #f0f0f0; /* Cambio de color de fondo en el hover */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Cambio de sombra en el hover */
+        transform: scale(1.05);
+      }
+    
+    #cantidad {
+        width: 25px;
+        height: 20px;
+        margin-right: 5px;
+        text-align: center;
+    }
+
+    .custom-input::-webkit-inner-spin-button,
+    .custom-input::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+    }
+
 
     .contenedor {
         display: flex;
@@ -73,7 +106,7 @@
         margin: 20px;
         margin-bottom: 20px;
         width: 300px;
-        height: 380px;
+        height: 420px;
 
         display: flex;
         justify-content: center;

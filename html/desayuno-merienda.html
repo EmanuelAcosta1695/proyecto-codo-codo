@@ -5,9 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/desayuno-merienda.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Handlee">
     <link rel="icon" href="../img/secciones-inicio/Favicon.ico">
+
+    <link rel="stylesheet" href="../css/desayuno-merienda.css">
+
+    <script src="../js/carrito.js"></script>
+    <!-- <script src="../js/mostrarLocalStorage.js"></script> -->
+
     <title>Desayunos y Meriendas</title>
 </head>
 
@@ -23,125 +28,241 @@
             <a href="../html/almuerzo-cena.html">Almuerzo y cenas</a>
             <a href="../html/postres.html">Postres</a>
             <a href="../html/comentarios-formularios.html">Contactanos</a>
+            <a href="../html/carrito.html" style= "text-decoration: none";>🛒</a> 
         </nav>
     </header>
 
 
     <div class="contenedor_desayuno_merienda">
 
-        <div class="item_desayuno_merienda">
-            <div id="hidden"><img class="imagen_desayuno_merienda"
-                    src="../img/cards/desayunos-meriendas/ensalada_de_frutas3.jpg" alt="a"></div>
-            <p class="titulo_cards">Ensalada de frutas</p>
-            <p class="descripcion_cards">Ensalada de frutas refrescante, con trozos de melón dulce, uvas, frutillas,
-                arandanos y kiwi picado. Una deliciosa opción saludable en cualquier momento del día.</p>
-        </div>
-        <div class="item_desayuno_merienda">
-            <div id="hidden"><img class="imagen_desayuno_merienda" src="../img/cards/desayunos-meriendas/yogurt2.jpg"
-                    alt="a"></div>
-            <p class="titulo_cards">Yogurt con granola y frutas</p>
-            <p class="descripcion_cards">Yogurt griego cremoso con granola crujiente y arándanos, frambuesas frescas y
-                rodajas de plátano dulce. Una deliciosa y saludable opción para comenzar el día</p>
-        </div>
-        <div class="item_desayuno_merienda_large">
-            <h1 class="titulo_cards">¡Nuestra recomendación!</h1>
-            <div id="hidden"><img class="imagen_desayuno_merienda"
-                    src="../img/cards/desayunos-meriendas/tostadas_torre2.jpg" alt="a"></div>
-            <p class="titulo_cards">Torre francesa</p>
-            <p class="descripcion_cards">La torre de tostadas francesas combina la suavidad y el sabor de las clásicas
-                tostadas francesas con una presentación impresionante. Entre cada capa se colocan rodajas de banana, que
-                aportan un sabor dulce y una textura suave que contrasta perfectamente con la consistencia esponjosa de
-                las tostadas.
-                Para añadir un toque fresco y ácido, se esparcen frambuesas frescas sobre cada capa.Finalmente, se
-                corona la torre con un generoso chorrito de miel líquida que se desliza por las capas, endulzando cada
-                bocado y añadiendo un toque de aroma y sabor natural.</p>
-        </div>
-        <div class="item_desayuno_merienda">
-            <div id="hidden"><img class="imagen_desayuno_merienda"
-                    src="../img/cards/desayunos-meriendas/carrot_cake2.jpg" alt="a"></div>
-            <p class="titulo_cards">Carrot cake</p>
-            <p class="descripcion_cards">Carrot cake esponjosa y húmeda, cubierta con una capa espesa de frosting de
-                queso crema con un toque de vainilla. Las zanahorias ralladas, las nueces y las especias de canela y
-                jengibre dan un sabor deliciosamente aromático. </p>
-        </div>
-        <div class="item_desayuno_merienda">
-            <div id="hidden"><img class="imagen_desayuno_merienda" src="../img/cards/desayunos-meriendas/torta3.jpg"
-                    alt="a"></div>
-            <p class="titulo_cards">Torta de chocolate</p>
-            <p class="descripcion_cards">Torta de chocolate húmeda, cubierta con una mezcla de frutos rojos frescos,
-                como fresas, arándanos y frambuesas. El sabor intenso del chocolate se combina perfectamente con la
-                acidez de los frutos rojos para crear una experiencia deliciosa y equilibrada.</p>
-        </div>
-        <div class="item_desayuno_merienda">
-            <div id="hidden"><img class="imagen_desayuno_merienda" src="../img/cards/desayunos-meriendas/tostada4.jpg"
-                    alt="a"></div>
-            <p class="titulo_cards">Tostadas con palta</p>
-            <p class="descripcion_cards">Dos tostadas crujientes cubiertas con palta, huevo y rodajas de tomate cherry.
-                Una opción nutritiva y llena de sabor para llenarte de energía.</p>
-        </div>
-        <div class="item_desayuno_merienda">
-            <div id="hidden"><img class="imagen_desayuno_merienda"
-                    src="../img/cards/desayunos-meriendas/tostada_salmon.jpg" alt="a"></div>
-            <p class="titulo_cards">Tostadas con salmón</p>
-            <p class="descripcion_cards">Tostada con una capa generosa de queso crema, cubiertas con salmón ahumado
-                suave, huevo y cilantro. Un plato sofisticado y delicioso para hacer tu día único.</p>
-        </div>
-        <div class="item_desayuno_merienda">
-            <div id="hidden"><img class="imagen_desayuno_merienda" src="../img/cards/desayunos-meriendas/sandwich.jpg"
-                    alt="a"></div>
-            <p class="titulo_cards">Sandwiches de queso</p>
-            <p class="descripcion_cards">Clásicos sandwiches de queso tostado, con rebanadas de tomate fresco y palta en
-                medio del queso derretido y el pan tostado. Una opción que combina texturas y sabores perfectamente.</p>
-        </div>
-        <div class="item_desayuno_merienda">
-            <div id="hidden"><img class="imagen_desayuno_merienda" src="../img/cards/desayunos-meriendas/arepas2.jpg"
-                    alt="a"></div>
-            <p class="titulo_cards">Arepas rellenas</p>
-            <p class="descripcion_cards">Deliciosas arepas de maíz, doradas por fuera y suaves por dentro, rellenas con
-                vegetales salteados, palta y queso fresco. Un plato tradicional de la comida latinoamericana que puede
-                disfrutarse en cualquier momento del día.</p>
-        </div>
-        <div class="item_desayuno_merienda_large2">
-            <h1 class="titulo_cards">¡Que nunca nos falte el matecito!</h1>
-            <br>
-            <div id="hidden"><img class="imagen_desayuno_merienda" src="../img/cards/desayunos-meriendas/mate1.jpg"
-                    alt="a"></div>
 
-            <p class="titulo_cards">Equipo de mate a disposición</p>
-            <p class="descripcion_cards">Nos complace brindarte una experiencia auténticamente argentina y para que disfrutes de cada momento, te ofrecemos nuestro exclusivo servicio de mate. Queremos que te sientas como en casa y te sumerjas en la tradición y el sabor de nuestra cultura. Para tu deleite, ponemos a tu disposición el equipo completo de mate, compuesto por un mate, un termo y la mejor yerba mate seleccionada especialmente para ti. </p>
-        </div>
-        <div class="item_desayuno_merienda">
-            <div id="hidden"><img class="imagen_desayuno_merienda" src="../img/cards/desayunos-meriendas/cafe3.jpg"
-                    alt="a"></div>
-            <p class="titulo_cards">Café</p>
-            <p class="descripcion_cards">Café recién preparado, con un aroma tentador que llena la habitación. El sabor
-                rico y robusto de los granos tostados se mezcla con la suavidad del líquido caliente. Una bebida
-                estimulante que se disfruta en cualquier momento del día.</p>
-        </div>
-        <div class="item_desayuno_merienda">
-            <div id="hidden"><img class="imagen_desayuno_merienda" src="../img/cards/desayunos-meriendas/te1.jpg"
-                    alt="a"></div>
-            <p class="titulo_cards">Té de menta con limón</p>
-            <p class="descripcion_cards">Té de menta con limón, con un aroma fresco que invita a beberla. El sabor suave
-                y refrescante de la menta se combina con un toque de limón cítrico, creando una bebida reconfortante y
-                relajante. Perfecta para tomar en cualquier momento del día.</p>
-        </div>
-        <div class="item_desayuno_merienda">
-            <div id="hidden"><img class="imagen_desayuno_merienda"
-                    src="../img/cards/desayunos-meriendas/chocolate_bebida.jpg" alt="a"></div>
-            <p class="titulo_cards">Chocolate caliente</p>
-            <p class="descripcion_cards">Chocolate caliente cremoso y reconfortante, con un aroma dulce que te hace
-                sentir como en casa. El chocolate derretido se combina con leche caliente y una pizca de canela, creando
-                una bebida para consentirte a ti mismo con un capricho dulce.</p>
-        </div>
-        <div class="item_desayuno_merienda">
-            <div id="hidden"><img class="imagen_desayuno_merienda"
-                    src="../img/cards/desayunos-meriendas/chocolate_crema1.jpg" alt="a"></div>
-            <p class="titulo_cards">Chocolate con crema</p>
-            <p class="descripcion_cards">Chocolate caliente cremoso y delicioso, cubierto con una capa generosa de crema
-                batida dulce. La crema batida añade un toque de indulgencia a este clásico invierno. Perfecto para
-                relajarse en un día frío.</p>
-        </div>
+            <div class="item_desayuno_merienda">
+                <div id="hidden"><img class="imagen_desayuno_merienda"
+                        src="../img/cards/desayunos-meriendas/ensalada_de_frutas3.jpg" alt="a"></div>
+                <h3 class="titulo_cards">Ensalada de frutas</h3>
+                <p class="descripcion_cards">
+                    Ensalada de frutas refrescante, con trozos de melón dulce, uvas, frutillas,
+                    arandanos y kiwi picado. Una deliciosa opción saludable en cualquier momento del día.
+                </p>
+                <div>
+                    <input type="number" id="cantidad" value="1" class="custom-input">
+                    <button id="agregarCarrito1" onclick="miCarrito(event)" class="agregarCarrito">Agregar al carrito</button>
+                </div>
+            </div>
+
+
+            <div class="item_desayuno_merienda">
+                <div id="hidden"><img class="imagen_desayuno_merienda" src="../img/cards/desayunos-meriendas/yogurt2.jpg"
+                        alt="a"></div>
+                <h3 class="titulo_cards">Yogurt con granola y frutas</h3>
+                <p class="descripcion_cards">
+                    Yogurt griego cremoso con granola crujiente y arándanos, frambuesas frescas y
+                    rodajas de plátano dulce. Una deliciosa y saludable opción para comenzar el día
+                </p>
+                <div>
+                    <input type="number" id="cantidad" value="1" class="custom-input">
+                    <button id="agregarCarrito2" onclick="miCarrito(event)" class="agregarCarrito">Agregar al carrito</button>
+                </div>
+            </div>
+
+
+            <div class="item_desayuno_merienda_large">
+                <h1 class="titulo_cards">¡Nuestra recomendación!</h1>
+                <div id="hidden"><img class="imagen_desayuno_merienda"
+                        src="../img/cards/desayunos-meriendas/tostadas_torre2.jpg" alt="a"></div>
+                <h3 class="titulo_cards">Torre francesa</h3>
+                <p class="descripcion_cards">
+                    La torre de tostadas francesas combina la suavidad y el sabor de las clásicas
+                    tostadas francesas con una presentación impresionante. Entre cada capa se colocan rodajas de banana, que
+                    aportan un sabor dulce y una textura suave que contrasta perfectamente con la consistencia esponjosa de
+                    las tostadas.
+                    Para añadir un toque fresco y ácido, se esparcen frambuesas frescas sobre cada capa.Finalmente, se
+                    corona la torre con un generoso chorrito de miel líquida que se desliza por las capas, endulzando cada
+                    bocado y añadiendo un toque de aroma y sabor natural.
+                </p>
+                <div>
+                    <input type="number" id="cantidad" value="1" class="custom-input">
+                    <button id="agregarCarrito3" onclick="miCarrito(event)" class="agregarCarrito">Agregar al carrito</button>
+                </div>
+            </div>
+
+
+            <div class="item_desayuno_merienda">
+                <div id="hidden"><img class="imagen_desayuno_merienda"
+                        src="../img/cards/desayunos-meriendas/carrot_cake2.jpg" alt="a"></div>
+                <h3 class="titulo_cards">Carrot cake</h3>
+                <p class="descripcion_cards">
+                    Carrot cake esponjosa y húmeda, cubierta con una capa espesa de frosting de
+                    queso crema con un toque de vainilla. Las zanahorias ralladas, las nueces y las especias de canela y
+                    jengibre dan un sabor deliciosamente aromático. 
+                </p>
+                <div>
+                    <input type="number" id="cantidad" value="1" class="custom-input">
+                    <button id="agregarCarrito4" onclick="miCarrito(event)" class="agregarCarrito">Agregar al carrito</button>
+                </div>
+            </div>
+
+
+            <div class="item_desayuno_merienda">
+                <div id="hidden"><img class="imagen_desayuno_merienda" src="../img/cards/desayunos-meriendas/torta3.jpg"
+                        alt="a"></div>
+                <h3 class="titulo_cards">Torta de chocolate</h3>
+                <p class="descripcion_cards">
+                    Torta de chocolate húmeda, cubierta con una mezcla de frutos rojos frescos,
+                    como fresas, arándanos y frambuesas. El sabor intenso del chocolate se combina perfectamente con la
+                    acidez de los frutos rojos para crear una experiencia deliciosa y equilibrada.
+                </p>
+                <div>
+                    <input type="number" id="cantidad" value="1" class="custom-input">
+                    <button id="agregarCarrito5" onclick="miCarrito(event)" class="agregarCarrito">Agregar al carrito</button>
+                </div>
+            </div>
+
+
+            <div class="item_desayuno_merienda">
+                <div id="hidden"><img class="imagen_desayuno_merienda" src="../img/cards/desayunos-meriendas/tostada4.jpg"
+                        alt="a"></div>
+                <h3 class="titulo_cards">Tostadas con palta</h3>
+                <p class="descripcion_cards">
+                    Dos tostadas crujientes cubiertas con palta, huevo y rodajas de tomate cherry.
+                    Una opción nutritiva y llena de sabor para llenarte de energía.
+                </p>
+                <div>
+                    <input type="number" id="cantidad" value="1" class="custom-input">
+                    <button id="agregarCarrito6" onclick="miCarrito(event)" class="agregarCarrito">Agregar al carrito</button>
+                </div>
+            </div>
+
+
+            <div class="item_desayuno_merienda">
+                <div id="hidden"><img class="imagen_desayuno_merienda"
+                        src="../img/cards/desayunos-meriendas/tostada_salmon.jpg" alt="a"></div>
+                <h3 class="titulo_cards">Tostadas con salmón</h3>
+                <p class="descripcion_cards">
+                    Tostada con una capa generosa de queso crema, cubiertas con salmón ahumado
+                    suave, huevo y cilantro. Un plato sofisticado y delicioso para hacer tu día único.
+                </p>
+                <div>
+                    <input type="number" id="cantidad" value="1" class="custom-input">
+                    <button id="agregarCarrito7" onclick="miCarrito(event)" class="agregarCarrito">Agregar al carrito</button>
+                </div>
+            </div>
+
+
+            <div class="item_desayuno_merienda">
+                <div id="hidden"><img class="imagen_desayuno_merienda" src="../img/cards/desayunos-meriendas/sandwich.jpg"
+                        alt="a"></div>
+                <h3 class="titulo_cards">Sandwiches de queso</h3>
+                <p class="descripcion_cards">
+                    Clásicos sandwiches de queso tostado, con rebanadas de tomate fresco y palta en
+                    medio del queso derretido y el pan tostado. Una opción que combina texturas y sabores perfectamente.
+                </p>
+                <div>
+                    <input type="number" id="cantidad" value="1" class="custom-input">
+                    <button id="agregarCarrito8" onclick="miCarrito(event)" class="agregarCarrito">Agregar al carrito</button>
+                </div>
+            </div>
+
+
+            <div class="item_desayuno_merienda">
+                <div id="hidden"><img class="imagen_desayuno_merienda" src="../img/cards/desayunos-meriendas/arepas2.jpg"
+                        alt="a"></div>
+                <h3 class="titulo_cards">Arepas rellenas</h3>
+                <p class="descripcion_cards">
+                    Deliciosas arepas de maíz, doradas por fuera y suaves por dentro, rellenas con
+                    vegetales salteados, palta y queso fresco. Un plato tradicional de la comida latinoamericana que puede
+                    disfrutarse en cualquier momento del día.
+                </p>
+                <div>
+                    <input type="number" id="cantidad" value="1" class="custom-input">
+                    <button id="agregarCarrito9" onclick="miCarrito(event)" class="agregarCarrito">Agregar al carrito</button>
+                </div>
+            </div>
+
+
+
+            <div class="item_desayuno_merienda_large2">
+                <h1 class="titulo_cards">¡Que nunca nos falte el matecito!</h1>
+                <br>
+                <div id="hidden"><img class="imagen_desayuno_merienda" src="../img/cards/desayunos-meriendas/mate1.jpg"
+                        alt="a"></div>
+    
+                <h3 class="titulo_cards">Equipo de mate a disposición</h3>
+                <p class="descripcion_cards">
+                    Nos complace brindarte una experiencia auténticamente argentina y para que disfrutes de cada momento, 
+                    te ofrecemos nuestro exclusivo servicio de mate. Queremos que te sientas como en casa y te sumerjas en 
+                    la tradición y el sabor de nuestra cultura. Para tu deleite, ponemos a tu disposición el equipo completo 
+                    de mate, compuesto por un mate, un termo y la mejor yerba mate seleccionada especialmente para ti. 
+                </p>
+                <div>
+                    <input type="number" id="cantidad" value="1" class="custom-input">
+                    <button id="agregarCarrito10" onclick="miCarrito(event)" class="agregarCarrito">Agregar al carrito</button>
+                </div>
+            </div>
+
+
+            <div class="item_desayuno_merienda">
+                <div id="hidden"><img class="imagen_desayuno_merienda" src="../img/cards/desayunos-meriendas/cafe3.jpg"
+                        alt="a"></div>
+                <h3 class="titulo_cards">Café</h3>
+                <p class="descripcion_cards">
+                    Café recién preparado, con un aroma tentador que llena la habitación. El sabor
+                    rico y robusto de los granos tostados se mezcla con la suavidad del líquido caliente. Una bebida
+                    estimulante que se disfruta en cualquier momento del día.
+                </p>
+                <div>
+                    <input type="number" id="cantidad" value="1" class="custom-input">
+                    <button id="agregarCarrito11" onclick="miCarrito(event)" class="agregarCarrito">Agregar al carrito</button>
+                </div>
+            </div>
+
+
+            <div class="item_desayuno_merienda">
+                <div id="hidden"><img class="imagen_desayuno_merienda" src="../img/cards/desayunos-meriendas/te1.jpg"
+                        alt="a"></div>
+                <h3 class="titulo_cards">Té de menta con limón</h3>
+                <p class="descripcion_cards">
+                    Té de menta con limón, con un aroma fresco que invita a beberla. El sabor suave
+                    y refrescante de la menta se combina con un toque de limón cítrico, creando una bebida reconfortante y
+                    relajante. Perfecta para tomar en cualquier momento del día.
+                </p>
+                <div>
+                    <input type="number" id="cantidad" value="1" class="custom-input">
+                    <button id="agregarCarrito12" onclick="miCarrito(event)" class="agregarCarrito">Agregar al carrito</button>
+                </div>
+            </div>
+
+
+            <div class="item_desayuno_merienda">
+                <div id="hidden"><img class="imagen_desayuno_merienda"
+                        src="../img/cards/desayunos-meriendas/chocolate_bebida.jpg" alt="a"></div>
+                <h3 class="titulo_cards">Chocolate caliente</h3>
+                <p class="descripcion_cards">
+                    Chocolate caliente cremoso y reconfortante, con un aroma dulce que te hace
+                    sentir como en casa. El chocolate derretido se combina con leche caliente y una pizca de canela, creando
+                    una bebida para consentirte a ti mismo con un capricho dulce.
+                </p>
+                <div>
+                    <input type="number" id="cantidad" value="1" class="custom-input">
+                    <button id="agregarCarrito13" onclick="miCarrito(event)" class="agregarCarrito">Agregar al carrito</button>
+                </div>
+            </div>
+
+
+            <div class="item_desayuno_merienda">
+                <div id="hidden"><img class="imagen_desayuno_merienda"
+                        src="../img/cards/desayunos-meriendas/chocolate_crema1.jpg" alt="a"></div>
+                <h3 class="titulo_cards">Chocolate con crema</h3>
+                <p class="descripcion_cards">
+                    Chocolate caliente cremoso y delicioso, cubierto con una capa generosa de crema
+                    batida dulce. La crema batida añade un toque de indulgencia a este clásico invierno. Perfecto para
+                    relajarse en un día frío.
+                </p>
+                <div>
+                    <input type="number" id="cantidad" value="1" class="custom-input">
+                    <button id="agregarCarrito14" onclick="miCarrito(event)" class="agregarCarrito">Agregar al carrito</button>
+                </div>
+            </div>
 
     </div>
 

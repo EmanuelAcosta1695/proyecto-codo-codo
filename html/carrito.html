@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Handlee">
+
+    <link rel="stylesheet" href="../css/carrito.css">
+
+    <script src="../js/carrito.js"></script>
+
+    <title>Postres</title>
+</head>
+<body onload="mostrarCarrito()">
+  
+  <header>
+    <div class="contenedor_header">
+        <img id="imagen_header" src="../img/cards/desayunos-meriendas/Logo1.png" alt="Logo">
+        <h1>Postres</h1>
+        
+        <nav class="categorias_header">
+            <a href="../index.html">Inicio</a>
+            <a href="../html/desayuno-merienda.html">Desayunos y meriendas</a>
+            <a href="../html/almuerzo-cena.html">Almuerzos y cenas</a>
+            <a href="../html/postres.html">Postres</a>
+            <a href="../html/comentarios-formularios.html">Contactanos</a>   
+        </nav>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <div id="carrito">
+
+      <table class="table">
+        <thead>
+          <tr class="info">
+            <th scope="col">ID</th>
+            <th scope="col">Titulo</th>
+            <th scope="col">Cantidad</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+
+    </div>
+    <div class="contenedorBtnPresupuesto">
+      <a href="comentarios-formularios.html">
+        <button id="presupuesto">Solicitar Presupuesto</button>
+      </a>
+    </div>
+    
+  </div>
+
+
+
+  <footer class="footer">
+    <div class="social-icons">
+      <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+
+  
+  
+  <!-- Agrega el enlace al archivo JavaScript de Font Awesome -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
+</body>
+</html>

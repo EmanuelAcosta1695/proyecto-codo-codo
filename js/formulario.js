@@ -44,6 +44,7 @@ var contenido = document.querySelector('#contenido');
     window.onload = traer_usuario;
 
 
+
 document.addEventListener('DOMContentLoaded', function() {
   const form = document.getElementById('userForm');
 
@@ -73,6 +74,21 @@ document.addEventListener('DOMContentLoaded', function() {
     // email encriptado
     const actionUrl = 'https://formsubmit.co/353e60ac6721fb40a1f21688c2050697';
 
+    // recupero carrito en local storage
+    let carrito = null;
+    if (localStorage.getItem('carrito')) {
+      carrito = JSON.parse(localStorage.getItem('carrito'));
+    }
+
+    // Agregar el objeto JSON al formulario
+    if (carrito) {
+      const carritoInput = document.createElement('input');
+      carritoInput.setAttribute('type', 'hidden'); // Esto oculta el campo de entrada en el formulario, lo que significa que no será visible para el usuario  
+      carritoInput.setAttribute('name', 'carrito'); // Este será el nombre del campo que se enviará junto con los datos del formulario
+      carritoInput.setAttribute('value', JSON.stringify(carrito)); // se utiliza para convertir el objeto en una cadena JSON
+      form.appendChild(carritoInput);
+    }
+
 
     // Envio formulario con datos del user
     fetch(actionUrl, {
@@ -84,7 +100,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
           console.log('El formulario se envió correctamente');
 
-          window.location.href = 'http://127.0.0.1:5500/Proyecto-Codo-a-Codo/index.html';
+          localStorage.removeItem('carrito');
+          localStorage.clear();
+
+          window.location.href = 'http://127.0.0.1:5500/ProyectoCodoFinal/Frontend/index.html';
 
         } else {
 

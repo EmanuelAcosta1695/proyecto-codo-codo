@@ -12,6 +12,8 @@
 
     <link rel="icon" href="../img/secciones-inicio/Favicon.ico">
 
+    <script src="../js/carrito.js"></script>
+
     <title>Almuerzos y Cenas</title>
 
 </head>
@@ -26,120 +28,139 @@
             <a href="../index.html">Inicio</a>
             <a href="../html/desayuno-merienda.html">Desayunos y meriendas</a>
             <a href="../html/postres.html">Postres</a>
-            <a href="../html/comentarios-formularios.html">Contactanos</a>   
+            <a href="../html/comentarios-formularios.html">Contactanos</a>  
+            <a href="../html/carrito.html" style= "text-decoration: none";>🛒</a> 
         </nav>
     </div>
   </header>
 
   <div class="contenedor">
 
-    <a class="link" href="./card-ampliada/tartaQueso.html">
-      <div class="card">
-        <div class="contImagen">
-          <img src="../img/cards/almuerzo-cena/ensalada-de-papas.jpg" alt="No se pudo cargar la imagen.">
-        </div>
-        <div class="contenido">
-          <h3>Ensalada de papa.</h3>
-          <p>Ensalada de papa con mayonesa de limón y mostaza, tan deliciosa que no la vas a querer compartir con nadie.</p>
-        </div> 
+
+    <div class="card">
+      <div class="contImagen">
+        <img src="../img/cards/almuerzo-cena/ensalada-de-papas.jpg" alt="No se pudo cargar la imagen.">
       </div>
-    </a>
-
-
-    <a class="link" href="./card-ampliada/pastelArroz.html">
-      <div class="card">
-        <div class="contImagen">
-          <img src="../img/cards/almuerzo-cena/papas-asadas.jpg" alt="No se pudo cargar la imagen.">
-        </div>
-        <div class="contenido">
-          <h3>Patatas asadas.</h3>
-          <p>Patatas asadas que conservan un exterior ligeramente crujiente que las hace irresistibles.</p>
-        </div> 
+      <div class="contenido">
+        <h3>Ensalada de papa.</h3>
+        <p>Ensalada de papa con mayonesa de limón y mostaza, tan deliciosa que no la vas a querer compartir con nadie.</p>
+      </div> 
+      <div>
+        <input type="number" id="cantidad" value="1" class="custom-input">
+        <button id="agregarCarrito1" onclick="miCarrito(event)" class="agregarCarrito">Agregar al carrito</button>
       </div>
-    </a>
+    </div>
+    
 
 
-    <a class="link" href="./card-ampliada/.html">
-      <div class="card">
-        <div class="contImagen">
-          <img src="../img/cards/almuerzo-cena/lentejas-estofadas.jpg" alt="No se pudo cargar la imagen.">
-        </div>
-        <div class="contenido">
-          <h3>Lentejas estofadas</h3>
-          <p>Lentejas estofadas sin grasascon mucho sabor y super cremosas.</p>
-        </div> 
+
+    <div class="card">
+      <div class="contImagen">
+        <img src="../img/cards/almuerzo-cena/papas-asadas.jpg" alt="No se pudo cargar la imagen.">
       </div>
-    </a>
-
-
-    <a class="link" href="./card-ampliada/tartaChocolate.html">
-      <div class="card">
-        <div class="contImagen">
-          <img src="../img/cards/almuerzo-cena/tortilla-vegana.jpg" alt="No se pudo cargar la imagen.">
-        </div>
-        <div class="contenido">
-          <h3>Tortilla de patatas vegana</h3>
-          <p>Tortilla de patatas vegana, un plato sin huevo más que sorprendente, que se sustituye por una mezcla de harina de garbanzo y agua.</p>
-        </div> 
+      <div class="contenido">
+        <h3>Patatas asadas.</h3>
+        <p>Patatas asadas que conservan un exterior ligeramente crujiente que las hace irresistibles.</p>
       </div>
-    </a>
+      <div>
+        <input type="number" id="cantidad" value="1" class="custom-input">
+        <button id="agregarCarrito2" onclick="miCarrito(event)" class="agregarCarrito">Agregar al carrito</button>
+      </div> 
+    </div>
+    
 
-
-
-
-
-
-    <a class="link" href="./card-ampliada/coulantChocolate.html">
-      <div class="card">
-        <div class="contImagen">
-          <img src="../img/cards/almuerzo-cena/bocadillo-champiñones.jpg" alt="No se pudo cargar la imagen.">
-        </div>
-        <div class="contenido">
-          <h3>Bocadillo de champiñones</h3>
-          <p>Bocadillo de champiñones portobello y hummus: platillo vegano para chuparse los dedos.</p>
-        </div> 
+    <div class="card">
+      <div class="contImagen">
+        <img src="../img/cards/almuerzo-cena/lentejas-estofadas.jpg" alt="No se pudo cargar la imagen.">
       </div>
-    </a>
-
-
-    <a class="link" href="./card-ampliada/brownieChocolate.html">
-      <div class="card">
-        <div class="contImagen">
-          <img src="../img/cards/almuerzo-cena/hamburguesa-vegana.jpg" alt="No se pudo cargar la imagen.">
-        </div>
-        <div class="contenido">
-          <h3>Hamburguesa vegana</h3>
-          <p>Hamburguesa vegana de alubias, nueces y avena, con miso para ligar los ingredientes.</p>
-        </div> 
+      <div class="contenido">
+        <h3>Lentejas estofadas</h3>
+        <p>Lentejas estofadas sin grasascon mucho sabor y super cremosas.</p>
+      </div> 
+      <div>
+        <input type="number" id="cantidad" value="1" class="custom-input">
+        <button id="agregarCarrito3" onclick="miCarrito(event)" class="agregarCarrito">Agregar al carrito</button>
       </div>
-    </a>
+    </div>
 
 
-    <a class="link" href="./card-ampliada/flanCalabaza.html">
-      <div class="card">
-        <div class="contImagen">
-          <img src="../img/cards/almuerzo-cena/arroz-habichuelas.jpg" alt="No se pudo cargar la imagen.">
-        </div>
-        <div class="contenido">
-          <h3>Arroz con habichuelas y alcachofas</h3>
-          <p>Con judías verdes, hinojo, pimiento verde, ajos tiernos, cardo, nabo o acelgas para un sabor unico.</p>
-        </div> 
+    <div class="card">
+      <div class="contImagen">
+        <img src="../img/cards/almuerzo-cena/tortilla-vegana.jpg" alt="No se pudo cargar la imagen.">
       </div>
-    </a>
-
-
-    <a class="link" href="./card-ampliada/tartaManzana.html">
-      <div class="card">
-        <div class="contImagen">
-          <img src="../img/cards/almuerzo-cena/conquetas-jamon.jpg" alt="No se pudo cargar la imagen.">
-        </div>
-        <div class="contenido">
-          <h3>Croquetas</h3>
-          <p>Croquetas de jamón ibérico y huevo duro, para tus aperitivos o almuerzos y cenas.</p>
-        </div> 
+      <div class="contenido">
+        <h3>Tortilla de patatas vegana</h3>
+        <p>Tortilla de patatas vegana, un plato sin huevo más que sorprendente, que se sustituye por una mezcla de harina de garbanzo y agua.</p>
+      </div> 
+      <div>
+        <input type="number" id="cantidad" value="1" class="custom-input">
+        <button id="agregarCarrito4" onclick="miCarrito(event)" class="agregarCarrito">Agregar al carrito</button>
       </div>
-    </a>
+    </div>
+    
 
+
+    <div class="card">
+      <div class="contImagen">
+        <img src="../img/cards/almuerzo-cena/bocadillo-champiñones.jpg" alt="No se pudo cargar la imagen.">
+      </div>
+      <div class="contenido">
+        <h3>Bocadillo de champiñones</h3>
+        <p>Bocadillo de champiñones portobello y hummus: platillo vegano para chuparse los dedos.</p>
+      </div> 
+      <div>
+        <input type="number" id="cantidad" value="1" class="custom-input">
+        <button id="agregarCarrito5" onclick="miCarrito(event)" class="agregarCarrito">Agregar al carrito</button>
+      </div>
+    </div>
+    
+
+
+
+    <div class="card">
+      <div class="contImagen">
+        <img src="../img/cards/almuerzo-cena/hamburguesa-vegana.jpg" alt="No se pudo cargar la imagen.">
+      </div>
+      <div class="contenido">
+        <h3>Hamburguesa vegana</h3>
+        <p>Hamburguesa vegana de alubias, nueces y avena, con miso para ligar los ingredientes.</p>
+      </div> 
+      <div>
+        <input type="number" id="cantidad" value="1" class="custom-input">
+        <button id="agregarCarrito6" onclick="miCarrito(event)" class="agregarCarrito">Agregar al carrito</button>
+      </div>
+    </div>
+    
+
+    <div class="card">
+      <div class="contImagen">
+        <img src="../img/cards/almuerzo-cena/arroz-habichuelas.jpg" alt="No se pudo cargar la imagen.">
+      </div>
+      <div class="contenido">
+        <h3>Arroz con habichuelas y alcachofas</h3>
+        <p>Con judías verdes, hinojo, pimiento verde, ajos tiernos, cardo, nabo o acelgas para un sabor unico.</p>
+      </div> 
+      <div>
+        <input type="number" id="cantidad" value="1" class="custom-input">
+        <button id="agregarCarrito7" onclick="miCarrito(event)" class="agregarCarrito">Agregar al carrito</button>
+      </div>
+    </div>
+    
+
+    <div class="card">
+      <div class="contImagen">
+        <img src="../img/cards/almuerzo-cena/conquetas-jamon.jpg" alt="No se pudo cargar la imagen.">
+      </div>
+      <div class="contenido">
+        <h3>Croquetas</h3>
+        <p>Croquetas de jamón ibérico y huevo duro, para tus aperitivos o almuerzos y cenas.</p>
+      </div> 
+      <div>
+        <input type="number" id="cantidad" value="1" class="custom-input">
+        <button id="agregarCarrito8" onclick="miCarrito(event)" class="agregarCarrito">Agregar al carrito</button>
+      </div>
+    </div>
+    
 
   </div>
 

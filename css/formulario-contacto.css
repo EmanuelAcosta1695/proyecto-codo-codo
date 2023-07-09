@@ -35,7 +35,7 @@
     .contenedor_header{
         display: grid;
         grid-template-columns: 30% 40% 32%; /*3ero coloca categorias a la dec*/
-        background-color: #f1f1f1;
+        background-color: #deb979;
         text-align: center;
         font-size: 5vh;
         font-family:'Handlee', serif;

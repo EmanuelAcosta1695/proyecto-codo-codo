@@ -88,9 +88,9 @@
         transition: transform 0.3s ease;
     }
 
-      .card:hover {
-        transform: scale(1.05);
-      }
+    .card:hover {
+    transform: scale(1.05);
+    }
 
     .contImagen {
         height: 70%;
@@ -116,12 +116,44 @@
     .link {
         color: black;
         text-decoration: none;
-      }
-      
-      a:visited {
-        color: inherit;
-      }
+    }
+    
+    a:visited {
+    color: inherit;
+    }
 
+
+    .agregarCarrito {
+    border-radius: 4px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra por debajo */
+    background-color: rgb(252, 248, 248); /* Fondo blanco */
+    color: #333; /* Color del texto */
+    padding: 8px 16px; /* Espacio interno */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+    margin-top: 8px;
+
+    /* Estilos adicionales para resaltar sutilmente */
+    border: 0.5px solid #ccc; /* Borde delgado */
+        
+    }
+
+    .agregarCarrito:hover {
+        background-color: #f0f0f0; /* Cambio de color de fondo en el hover */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Cambio de sombra en el hover */
+        transform: scale(1.05);
+    }
+    
+    #cantidad {
+        width: 25px;
+        height: 20px;
+        margin-right: 5px;
+        text-align: center;
+    }
+
+    .custom-input::-webkit-inner-spin-button,
+    .custom-input::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+    }
 
     /*----------------------------------------------*/
 

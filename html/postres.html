@@ -10,6 +10,8 @@
 
     <link rel="stylesheet" href="../css/postres.css">
 
+    <script src="../js/carrito.js"></script>
+
     <title>Postres</title>
 </head>
 <body>
@@ -23,7 +25,8 @@
             <a href="../index.html">Inicio</a>
             <a href="../html/desayuno-merienda.html">Desayunos y meriendas</a>
             <a href="../html/almuerzo-cena.html">Almuerzos y cenas</a>
-            <a href="../html/comentarios-formularios.html">Contactanos</a>   
+            <a href="../html/comentarios-formularios.html">Contactanos</a>  
+            <a href="../html/carrito.html" style= "text-decoration: none";>🛒</a> 
         </nav>
     </div>
   </header>
@@ -31,94 +34,126 @@
   <div class="contenedor">
 
 
-      <div class="card">
-        <div class="contImagen">
-          <img src="../img/cards/postres/Tarta-de-queso.jpg" alt="No se pudo cargar la imagen.">
-        </div>
-        <div class="contenido">
-          <h3>Tarta de queso.</h3>
+    <div class="card">
+      <div class="contImagen">
+        <img src="../img/cards/postres/Tarta-de-queso.jpg" alt="No se pudo cargar la imagen.">
+      </div>
+      <div class="contenido">
+        <h3>Tarta de queso.</h3>
         <p>Una tarta fria que resulta una estupenda idea para preparar como postre. Es muy fácil de hacer y con ingredientes sencillos.</p>
-        </div> 
+      </div> 
+      <div>
+        <input type="number" id="cantidad" value="1" class="custom-input">
+        <button id="agregarCarrito1" onclick="miCarrito(event)" class="agregarCarrito">Agregar al carrito</button>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="contImagen">
+        <img src="../img/cards/postres/Pastel-de-arroz.jpg" alt="No se pudo cargar la imagen.">
+      </div>
+      <div class="contenido">
+        <h3>Pastel de arroz de Bilbao</h3>
+        <p>Se trata de un dulce típico del Pais Vasco, pero sobre todo de la zona de Bilbao. A pesar de su nombre, no lleva ni un sólo grano de arroz.</p>
+      </div> 
+      <div>
+        <input type="number" id="cantidad" value="1" class="custom-input">
+        <button id="agregarCarrito2" onclick="miCarrito(event)" class="agregarCarrito">Agregar al carrito</button>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="contImagen">
+        <img src="../img/cards/postres/Trufas-de-chocolate.jpg" alt="No se pudo cargar la imagen.">
+      </div>
+      <div class="contenido">
+        <h3>Trufas de chocolate</h3>
+        <p>Las trufas, es un hongo de color negruzco. Pero estas trufas de chocolate, poco tienen que ver con este hongo.</p>
+      </div> 
+      <div>
+        <input type="number" id="cantidad" value="1" class="custom-input">
+        <button id="agregarCarrito3" onclick="miCarrito(event)" class="agregarCarrito">Agregar al carrito</button>
+      </div>
+    </div>
+
+
+    <div class="card">
+
+      <div class="contImagen">
+        <img src="../img/cards/postres/tarta-de-chocolate.jpg" alt="No se pudo cargar la imagen.">
       </div>
 
-
-      <div class="card">
-        <div class="contImagen">
-          <img src="../img/cards/postres/Pastel-de-arroz.jpg" alt="No se pudo cargar la imagen.">
-        </div>
-        <div class="contenido">
-          <h3>Pastel de arroz de Bilbao</h3>
-          <p>Se trata de un dulce típico del Pais Vasco, pero sobre todo de la zona de Bilbao. A pesar de su nombre, no lleva ni un sólo grano de arroz.</p>
-        </div> 
+      <div class="contenido">
+        <h3>Tarta de chocolate</h3>
+        <p>Una tarta muy suave, riquisima, ideal para los amantes del chocolate.</p>
+      </div> 
+      <div>
+        <input type="number" id="cantidad" value="1" class="custom-input">
+        <button id="agregarCarrito4" onclick="miCarrito(event)" class="agregarCarrito">Agregar al carrito</button>
       </div>
+    </div>
 
 
-      <div class="card">
-        <div class="contImagen">
-          <img src="../img/cards/postres/Trufas-de-chocolate.jpg" alt="No se pudo cargar la imagen.">
-        </div>
-        <div class="contenido">
-          <h3>Trufas de chocolate</h3>
-          <p>Las trufas, es un hongo de color negruzco. Pero estas trufas de chocolate, poco tienen que ver con este hongo.</p>
-        </div> 
+    <div class="card">
+      <div class="contImagen">
+        <img src="../img/cards/postres/Coulant-de-chocolate.jpg" alt="No se pudo cargar la imagen.">
       </div>
-
-
-      <div class="card">
-
-        <div class="contImagen">
-          <img src="../img/cards/postres/tarta-de-chocolate.jpg" alt="No se pudo cargar la imagen.">
-        </div>
-
-        <div class="contenido">
-          <h3>Tarta de chocolate</h3>
-          <p>Una tarta muy suave, riquisima, ideal para los amantes del chocolate.</p>
-        </div> 
+      <div class="contenido">
+        <h3>Coulant de chocolate</h3>
+        <p>Se trata de un pequeño bizcocho de chocolate relleno que, servido caliente, se convierte en un volcán de chocolate fundido.</p>
+      </div> 
+      <div>
+        <input type="number" id="cantidad" value="1" class="custom-input">
+        <button id="agregarCarrito5" onclick="miCarrito(event)" class="agregarCarrito">Agregar al carrito</button>
       </div>
+    </div>
 
 
-      <div class="card">
-        <div class="contImagen">
-          <img src="../img/cards/postres/Coulant-de-chocolate.jpg" alt="No se pudo cargar la imagen.">
-        </div>
-        <div class="contenido">
-          <h3>Coulant de chocolate</h3>
-          <p>Se trata de un pequeño bizcocho de chocolate relleno que, servido caliente, se convierte en un volcán de chocolate fundido.</p>
-        </div> 
+    <div class="card">
+      <div class="contImagen">
+        <img src="../img/cards/postres/Brownie-de-chocolate.jpg" alt="No se pudo cargar la imagen.">
       </div>
-
-
-      <div class="card">
-        <div class="contImagen">
-          <img src="../img/cards/postres/Brownie-de-chocolate.jpg" alt="No se pudo cargar la imagen.">
-        </div>
-        <div class="contenido">
-          <h3>Brownie de chocolate</h3>
-          <p>Brownie de chocolate con nueces sin agregados de levadura química para su horneado.</p>
-        </div> 
+      <div class="contenido">
+        <h3>Brownie de chocolate</h3>
+        <p>Brownie de chocolate con nueces sin agregados de levadura química para su horneado.</p>
+      </div> 
+      <div>
+        <input type="number" id="cantidad" value="1" class="custom-input">
+        <button id="agregarCarrito6" onclick="miCarrito(event)" class="agregarCarrito">Agregar al carrito</button>
       </div>
+    </div>
 
 
-      <div class="card">
-        <div class="contImagen">
-          <img src="../img/cards/postres/Flan-de-calabaza.jpg" alt="No se pudo cargar la imagen.">
-        </div>
-        <div class="contenido">
-          <h3>Flan de calabaza</h3>
-          <p>El flan es un postre tradicional cuyo origen se remonta a varios siglos antes de Cristo y se elaboraba con huevo.</p>
-        </div> 
+    <div class="card">
+      <div class="contImagen">
+        <img src="../img/cards/postres/Flan-de-calabaza.jpg" alt="No se pudo cargar la imagen.">
       </div>
-
-
-      <div class="card">
-        <div class="contImagen">
-          <img src="../img/cards/postres/Tarta-de-manzana.jpg" alt="No se pudo cargar la imagen.">
-        </div>
-        <div class="contenido">
-          <h3>Tarta de manzana</h3>
-          <p>Un más que popular postre que tiene muchas variantes, preparada con una base de galleta y mantequilla.</p>
-        </div> 
+      <div class="contenido">
+        <h3>Flan de calabaza</h3>
+        <p>El flan es un postre tradicional cuyo origen se remonta a varios siglos antes de Cristo y se elaboraba con huevo.</p>
+      </div> 
+      <div>
+        <input type="number" id="cantidad" value="1" class="custom-input">
+        <button id="agregarCarrito7" onclick="miCarrito(event)" class="agregarCarrito">Agregar al carrito</button>
       </div>
+    </div>
+
+
+    <div class="card">
+      <div class="contImagen">
+        <img src="../img/cards/postres/Tarta-de-manzana.jpg" alt="No se pudo cargar la imagen.">
+      </div>
+      <div class="contenido">
+        <h3>Tarta de manzana</h3>
+        <p>Un más que popular postre que tiene muchas variantes, preparada con una base de galleta y mantequilla.</p>
+      </div> 
+      <div>
+        <input type="number" id="cantidad" value="1" class="custom-input">
+        <button id="agregarCarrito8" onclick="miCarrito(event)" class="agregarCarrito">Agregar al carrito</button>
+      </div>
+    </div>
 
 
   </div>
@@ -130,6 +165,8 @@
       <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
     </div>
   </footer>
+
+  
   
   <!-- Agrega el enlace al archivo JavaScript de Font Awesome -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
