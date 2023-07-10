@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
           localStorage.removeItem('carrito');
           localStorage.clear();
 
-          window.location.href = 'http://127.0.0.1:5500/ProyectoCodoFinal/Frontend/index.html';
+          window.location.href = 'https://showmethecode.netlify.app/';
 
         } else {
 

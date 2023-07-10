@@ -166,7 +166,6 @@ function mostrarCarrito() {
       // Agregar el contenido de cada objeto al HTML acumulado
       html += `
         <tr>
-          <td>${objeto.id}</td>
           <td>${objeto.titulo}</td>
           <td>${objeto.cantidad}</td>
           <td><button class="btnDelete" onclick="eliminarProduct(this)"><i>❌</i></button></td>
