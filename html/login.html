@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar producto</title>
+    <link rel="stylesheet" href="../css/estilo-registro.css">
+</head>
+
+<body>
+    <h1>Iniciar sesión</h1>
+
+    <form id="formulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+
+
+        <button type="submit">Iniciar sesión</button>
+<!--         <a href="indexAdmin.html">Menu principal</a> -->
+    </form>
+
+    <script>
+        const URL = "https://rociobrezan.pythonanywhere.com/"
+
+        // Capturamos el evento de envío del formulario
+        document.getElementById('formulario').addEventListener('submit', function (event) {
+        event.preventDefault() // Evitamos que se recargue la página
+
+        // Obtenemos los valores del formulario
+        var nombre = document.getElementById('nombre').value
+        var password = document.getElementById('password').value
+
+
+        // Creamos un objeto con los datos del producto
+        var usuario = {
+            nombre: nombre,
+            password: password
+        }
+
+        console.log(usuario)
+        // Realizamos la solicitud POST al servidor
+
+        fetch(URL + 'login', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(usuario)
+        })
+            .then(function (response) {
+                return response.json() // Parseamos la respuesta JSON
+
+            })
+            .then(function (data) {
+                console.log('Data:', data)
+                if (data.login==true){
+                    if (data.admin==true){
+                        window.location.href = "./indexAdmin.html"; // Redirigir al usuario a indexAdmin.htm
+                    } 
+                    else{
+                        window.location.href = "../index.html"; // Redirigir al usuario a indexAdmin.htm
+                    }
+                }
+                else{
+                    alert('Mensaje:'+ data.message)
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>
